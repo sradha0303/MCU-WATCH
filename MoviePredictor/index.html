@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><b>Movie Recommendations</b></h1>
+        <h3><b>Select Genres:</b></h3>
+        <form id="genreForm">
+            <div id="genreSelection">
+                <label><i><input type="checkbox" value="action" aria-label="Action"> Action</i></label><br>
+                <label><i><input type="checkbox" value="science_fiction" aria-label="Science Fiction"> Science Fiction</i></label><br>
+                <label><i><input type="checkbox" value="superhero" aria-label="Superhero"> Superhero</i></label><br>
+                <label><i><input type="checkbox" value="comedy" aria-label="Comedy"> Comedy</i></label><br>
+                <label><i><input type="checkbox" value="spy" aria-label="Spy"> Spy</i></label><br>
+                <label><i><input type="checkbox" value="heist" aria-label="Heist"> Heist</i></label><br>
+                <label><i><input type="checkbox" value="political_thriller" aria-label="Political Thriller"> Political Thriller</i></label><br>
+                <label><i><input type="checkbox" value="space_opera" aria-label="Space Opera"> Space Opera</i></label><br>
+                <label><i><input type="checkbox" value="mystery" aria-label="Mystery"> Mystery</i></label><br>
+                <label><i><input type="checkbox" value="drama" aria-label="Drama"> Drama</i></label><br>
+                <label><i><input type="checkbox" value="romance" aria-label="Romance"> Romance</i></label><br>
+            </div>
+            <button type="button" onclick="showMovies()">Get Recommendations</button>
+        </form>
+        <div id="recommendations"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
